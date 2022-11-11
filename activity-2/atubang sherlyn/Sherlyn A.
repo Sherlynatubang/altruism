@@ -1,0 +1,115 @@
+/**
+* Name: Sherlyn G. Atubang
+* Section: Altruism
+* Year: 4th Year
+*/
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		Scanner sherlyn=new Scanner(System.in);
+		int total=0,item;
+		System.out.println("DO YOU WANT TO MAKE AN ORDER?\n[1]YES    [2]NO");
+		int a=sherlyn.nextInt();
+		while(a==1){
+		    System.out.println("SELECT FOR CATEGORIES BELOW:");
+		    System.out.println("[1]FOODS\n[2]SNACKS\n[3]BEVERAGES");
+		    int ctgry=sherlyn.nextInt();
+		    
+		    if(ctgry==1){
+		        System.out.println("--YOU SELECTED FOODS--");
+		        //FOOD CHOICES//
+		       System.out.println("[1] PORK LIEMPO: $50");
+		       System.out.println("[2]GUISADO: $20");
+		       System.out.println("[3]GINAMAY: $20");
+		       System.out.println("[4]FRIED CHICKEN: $15");
+		       System.out.println("[5]ADOBO: $25");
+		       
+		        System.out.println("ENTER ITEM:");
+		        item=sherlyn.nextInt();
+		        //FOOD PRICES//
+		        if (item==1){
+		            System.out.println("YOU SELECTED 1pc PORK LIEMPO");
+		            total=total+50;
+		            }else if (item==2){
+		            System.out.println("YOU SELECTED 1pc GUISADO");
+		            total=total+20;
+		            }else if (item==3){
+		            System.out.println("YOU SELECTED 1pc GINAMAY");
+		            total=total+20;
+		            }else if (item==4){
+		            System.out.println("YOU SELECTED 1pc FRIED CHICKEN");
+		            total=total+15;
+		            }else if (item==5){
+		            System.out.println("YOU SELECTED 1pc ADOBO");
+		            total=total+25;
+		            }else{
+		                System.out.println("INVALID KEY");
+		            }
+		        
+		    }else if(ctgry==2){
+		        System.out.println("--YOU SELECTED SNACKS--");
+		        //SNACKS CHOICES//
+		       System.out.println("[1]PANCAKE: $10");
+		       System.out.println("[2]PIZZA: $20");
+		       System.out.println("[3]HOTDOG: $5");
+		       System.out.println("[4]ICE CREAM: $15");
+		       System.out.println("[5]SHAWARMA: $25");
+		        //SNACKS PRICES//
+		        System.out.println("ENTER ITEM:");
+		        item=sherlyn.nextInt();
+		        if (item==1){
+		            System.out.println("YOU SELECTED 1pc PANCAKE");
+		            total=total+10;
+		            }else if (item==2){
+		            System.out.println("YOU SELECTED 1pc PIZZA");
+		            total=total+20;
+		            }else if (item==3){
+		            System.out.println("YOU SELECTED 1pc HOTDOG");
+		            total=total+5;
+		            }else if (item==4){
+		            System.out.println("YOU SELECTED 1pc ICE CREAM");
+		            total=total+15;
+		            }else if (item==5){
+		            System.out.println("YOU SELECTED 1pc SHAWARMA");
+		            total=total+25;
+		            }else{
+		                System.out.println("INVALID KEY");
+		            }
+		    }else if(ctgry==3){
+		        System.out.println("--YOU SELECTED BEVERAGES--");
+		        //BEVERAGE CHOICES//
+		       System.out.println("[1]COKE: $20");
+		       System.out.println("[2]NESTEA: $50");
+		       System.out.println("[3]REDHORSE: $125");
+		       System.out.println("[4]STING: $35");
+		       System.out.println("[5]WATER: $15");
+		       //BEVERAGE PRICES//
+		       System.out.println("ENTER ITEM:");
+		        item=sherlyn.nextInt();
+		        if (item==1){
+		            System.out.println("YOU SELECTED 1pc COKE");
+		            total=total+20;
+		            }else if (item==2){
+		            System.out.println("YOU SELECTED 1pc NESTEA");
+		            total=total+50;
+		            }else if (item==3){
+		            System.out.println("YOU SELECTED 1pc REDHORSE");
+		            total=total+125;
+		            }else if (item==4){
+		            System.out.println("YOU SELECTED 1pc STING");
+		            total=total+35;
+		            }else if (item==5){
+		            System.out.println("YOU SELECTED 1pc WATER");
+		            total=total+15;
+		            }else{
+		                System.out.println("INVALID KEY");
+		            }
+		    }else{
+		        System.out.println("INVALID KEY.");
+		    }
+		    System.out.println("DO YOU WANT TO MAKE ANOTHER PURCHASE?\n[1]YES    [2]NO");
+		    a=sherlyn.nextInt();
+		}
+		System.out.println("TOTAL PURCHASE:"+total);
+	}
+}
